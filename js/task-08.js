@@ -9,5 +9,7 @@ form.addEventListener("submit", (event) => {
 
   email.value === "" || password.value === ""
     ? alert("У формі є незаповнені поля. Заповніть, будь ласка")
-    : console.log(email.value, password.value) & event.currentTarget.reset();
+    : console.log(
+        `userObject = {email: ${email.value}, password: ${password.value}}`
+      ) & event.currentTarget.reset();
 });
